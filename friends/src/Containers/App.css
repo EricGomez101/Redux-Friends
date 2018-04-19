@@ -1,0 +1,38 @@
+.App{
+  margin: 0 0 20px;
+}
+.header{
+  background: rgb(65, 65, 65);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.listContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.listItem{
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid lightgray;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.centerText{
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.displayButttons{
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+}
+button:active{
+  background: cornflowerblue;
+  padding: 3px;
+}
