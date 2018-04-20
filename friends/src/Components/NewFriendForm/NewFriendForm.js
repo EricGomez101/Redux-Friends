@@ -1,7 +1,5 @@
 import React from 'react';
 import './NewFriendForm.css';
-import {store} from '../../index';
-import {updateFriends} from '../../Actions/FriendActions'
 
 export const NewFriendForm = (props) => {
   return(
@@ -30,7 +28,7 @@ export const NewFriendForm = (props) => {
         onChange={props.updateValues}
         placeholder='enter friend email'
       />
-      <button type='button' onClick={ () => store.dispatch(updateFriends({name:props.name, age: props.age, email: props.email}))}>Submit new friend</button>
+      <button type='button' onClick={props.submitNewFriend}>Submit new friend</button>
     </div>
   );
 }
